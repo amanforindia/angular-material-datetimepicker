@@ -975,13 +975,13 @@ function ngMaterialDatePicker(moment) {
               });
             };
 
-            element.on(EVENTS.POINTER_DOWN, function() {
+            /*element.on(EVENTS.POINTER_DOWN, function() {
                element.on(EVENTS.POINTER_MOVE, onMoveEvent);
             });
 
             element.on(EVENTS.POINTER_UP, function() {
                 element.off(EVENTS.POINTER_MOVE);
-            });
+            });*/
 
             scope.$on("$destroy", function() {
                 element.off(EVENTS.POINTER_MOVE, onMoveEvent); 
